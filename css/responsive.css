@@ -136,6 +136,25 @@
   width: 100%;
 }
 
+.filter-btn {
+    padding: 8px 12px;
+    flex: 0 0 0%;
+}
+
+.ourWork .justify-content-center{
+  justify-content: start !important;
+}
+
+ .review-card {
+   padding: 16px;
+  }
+  .review-card .align-items-start{
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center;
+  }
+
 }
 
 @media only screen and (max-height: 539.98px) {

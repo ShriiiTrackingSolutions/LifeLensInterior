@@ -461,6 +461,7 @@ img {
   padding: 12px 24px;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
+
 .btnoutline:hover{
   color: #000000;
 }
@@ -737,6 +738,7 @@ img {
   text-align: center;
   background-color: var(--lightBg);
   height: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .serviceIfo{
   padding: 12px 16px;
@@ -761,13 +763,6 @@ img {
  /* Our Work section start */
 .ourWork{
   background-color: var(--lightBg);
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #e6ded9;
 }
 
 .gallery-filter {
@@ -816,7 +811,7 @@ body {
   background-color: #000;
   transform: scaleX(0);
   transform-origin: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .filter-btn:hover::after,
@@ -839,8 +834,9 @@ body {
 }
 
 .filter-btn.active::after{
-  display: none;
+  background-color: #ffffff;
 }
+
 
     .gallery-card {
       display: none;
@@ -855,4 +851,260 @@ body {
       transform: translateY(0);
     }
 
+    .ourWork .spotlight{
+      position: relative;
+      display: inline-block;
+      box-shadow: #0000001e 0px 15px 25px, #00000017 0px 5px 10px;
+    }
+
+    .ourWork .spotlight .gallery-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+  .spotlight {
+  cursor: url('../image/Cursor.png'), zoom-in;
+}
+
+
+    .ourWork .spotlight:hover .gallery-overlay {
+      opacity: 1;
+    }
+
  /* Our Work section end */
+
+
+/* What Our Clients Say section start */
+
+ .review-card {
+  background-color: #fff;
+  border: 1px solid #dfdbdb;
+  border-radius: 0;
+  padding: 3rem;
+  margin: 2px;
+}
+.avatarImg{
+  width: 100px;
+  aspect-ratio: 1/1;
+  margin-right: 20px;
+}
+.review-card img{
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.whatOurClientsSay .owl-dots {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 30px;
+}
+.whatOurClientsSay .owl-dots button.owl-dot span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  display: inline-block;
+  background: var(--accentColour);
+  margin: 4px 0;
+}
+.whatOurClientsSay .owl-dots button.owl-dot.active span {
+  background-color: var(--primary-color);
+}
+
+.review-text {
+  color: #666;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* What Our Clients Say section end */
+
+
+
+    .advantage-card {
+      background: #fff;
+      border: 1px solid #c9c9c97e;
+      text-align: center;
+      padding: 30px 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      height: 100%;
+    }
+
+    .advantage-card:hover {
+      transform: translateY(-5px);
+      background-color: var(--black);
+      color: #ffffff;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    }
+    .advantage-card:hover .icon-wrapper {
+      color: var(--black);
+    }
+
+    .icon-wrapper {
+      width: 48px;
+      height: 48px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: var(--lightBg);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+
+    .advantage-card h5 {
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .advantage-card p {
+      font-size: 14px;
+      color: #666;
+      margin-top: 10px;
+    }
+
+
+/* Ready to Upgrade section start */
+
+.readyToUpgrade{
+  background-color: #ffffff;
+}
+
+.contactWraper{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contactCard{
+  position: relative;
+  display: flex;
+  gap: 20px;
+  color: var(--textGrey);
+  font-size: 14px;
+  transition: color 0.3s ease-in-out;
+}
+.contactCard address{
+  font-style: normal;
+  margin-bottom: 0;
+}
+.contactCard svg{
+ color: var(--black);
+}
+.absAnchor{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;  
+  z-index: 1;
+}
+.contactCard:hover{
+  color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+.formPart {
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.25);
+}
+.ContactForm input:not(.form-check-input),
+.ContactForm textarea {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  padding: 0 0 4px;
+  border-style: solid;
+  border-width: 0 0 1px;
+  border-color: #0000001a;
+  background-color: #02010100;
+  margin-bottom: 24px;
+}
+.ContactForm .form-control:focus {
+  background-color: #02010100;
+  border-color: #0000001a;
+  outline: 0;
+  box-shadow: none;
+}
+.aboutOurComp .imgpart1 p,
+.aboutOurComp h2.therdH {
+  padding-bottom: 16px;
+  border-bottom: 4px solid var(--primary-color);
+  margin-bottom: 40px;
+}
+.ContactForm .form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus {
+  box-shadow: none;
+}
+.ContactForm textarea {
+  resize: none;
+}
+.ContactForm textarea:focus-visible {
+  outline: 0;
+}
+.ContactForm .input-group > .form-control,
+.input-group > .form-floating,
+.input-group > .form-select {
+  padding: 0 0 20px;
+}
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
+  box-shadow: none;
+}
+.formSection {
+  background-color: var(--dullBlack);
+}
+.formSection .modal-header {
+  justify-content: center;
+  position: relative;
+}
+.formSection .modal-header .btn-close {
+  margin: 0 !important;
+  position: absolute;
+  right: 14px;
+  top: 14px;
+}
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.option {
+  border: none;
+  background: 0 0;
+  cursor: pointer;
+}
+.portfolio-item,
+.spotlight {
+  border: 2px solid var(--lightPink);
+}
+.option img {
+  width: 50px;
+  height: 50px;
+}
+/* Ready to Upgrade section end */
