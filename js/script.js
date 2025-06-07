@@ -26,10 +26,10 @@ function loadHeaderFooter(callback) {
                     <button class="btn-nav-close"><span class="close-btn">+</span></button>
                   </li>
                   <li class="navLi"><a class="navLink" href="#headBelowContent">Home</a></li>
+                  <li class="navLi"><a href="#about" class="navLink">About Us</a></li>
                   <li class="navLi"><a href="#recentWork" class="navLink">Recent Work</a></li>
                   <li class="navLi"><a href="#services" class="navLink">Services</a></li>
                   <li class="navLi"><a href="#work" class="navLink">Our Work</a></li>
-                  <li class="navLi"><a href="#about" class="navLink">About Us</a></li>
                   <li class="navLi"><a href="#contact" class="navLink">Contact</a></li>
                 </ul>
     
