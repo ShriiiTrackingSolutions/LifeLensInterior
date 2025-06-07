@@ -123,7 +123,7 @@
 
 
    <!-- We Design Experiences section start -->
-<section class="designExperience defaultPadding">
+<section class="designExperience defaultPadding" id="about">
 <div class="container">
   
   <div class="row align-items-center">
@@ -148,7 +148,7 @@
    <!-- We Design Experiences section end -->
 
 <!-- Our Recent Work section start -->
-<section class="ourRecentWork defaultPadding pt-0">
+<section class="ourRecentWork defaultPadding pt-0" id="recentWork">
 <div class="container">
   <h2 class="secH text-center">Our Recent Work</h2>
   <p class="maxPara text-muted mb-5">Experience our craftsmanship through these recent interior transformations</p>
@@ -230,7 +230,7 @@
 
 
 <!-- Services We Offer start -->
-<section class="servicesWeOffer defaultPadding">
+<section class="servicesWeOffer defaultPadding" id="services">
 <div class="container">
   <h2 class="secH text-center">Services We Offer</h2>
   <p class="maxPara text-muted mb-5">Comprehensive interior design solutions tailored to your unique needs by the best interior designer in Lucknow</p>
@@ -340,9 +340,7 @@
 <!-- Services We Offer end -->
      
 <!-- Our Work section start -->
-<section class="ourWork defaultPadding">
-
-
+<section class="ourWork defaultPadding" id="work">
 <div class="container">
  <h2 class="secH text-center">Our Work</h2>
   <p class="maxPara text-muted mb-5">Browse our latest projects across various categories</p>
@@ -605,7 +603,7 @@
 
 
 <!-- Ready to Upgrade section start -->
-<section class="readyToUpgrade defaultPadding">
+<section class="readyToUpgrade defaultPadding" id="contact">
   <div class="container">
       <h2 class="secH text-center">Ready to Upgrade Your Space?</h2>
     <p class="maxPara text-muted mb-5">Fill out the form below and we'll get back to you within 24 hours</p>
@@ -655,102 +653,85 @@
         <form class="row needs-validation ContactForm" id="contactForm" novalidate="">
           <div class="col-12">
             <div class="row">
-                <div class="col-lg-6">
-                  <input type="text" class="form-control" placeholder="Your Name" id="validationCustom01" required="">
-                  <div class="invalid-feedback">Please enter your name.</div>
-                </div>
-                 <div class="col-lg-6">
-                  <input type="number" class="form-control" placeholder="Phone Number" id="PhoneNo" required="">
-                  <div class="invalid-feedback">
-                    Please enter your Mobile Number.
-                  </div>
-                </div>  
+              <div class="col-lg-6">
+                <input type="text" class="form-control" placeholder="Your Name" id="Name" required="">
+                <div class="invalid-feedback">Please enter your name.</div>
               </div>
+              <div class="col-lg-6">
+                <input type="number" class="form-control" placeholder="Phone Number" id="PhoneNo" required="">
+                <div class="invalid-feedback"> Please enter your Mobile Number. </div>
+              </div>
+            </div>
           </div>
           <div class="col-12">
             <div class="row">
-                <div class="col-lg-6">
-                  <input type="text" class="form-control" placeholder="Your City" id="validationCity" required="">
-                  <div class="invalid-feedback">Please enter your City.</div>
-                </div>
-
-<div class="col-lg-6">
-      <input type="text" class="form-control" placeholder="Your Email" id="validateEmail"required>
-      <div class="invalid-feedback">
-        Please enter your email.
-      </div>
-  </div>
-                
+              <div class="col-lg-6">
+                <input type="text" class="form-control" placeholder="Your Email" id="validateEmail" required>
+                <div class="invalid-feedback"> Please enter your email. </div>
               </div>
-          </div>
-             
-           <div class="col-12">
-            <div class="row">
- <div class="col-lg-6">
-                   <select class="form-select" id="validationDefault04" required>
-      <option selected disabled value="">Type Of Project</option>
-      <option>Home Interior </option>
-      <option>Office Interior </option>
-      <option>Kitchen Renovation</option>
-      <option>Bathroom Renovation</option>
-      <option>Full Home Renovation</option>
-    </select>
-                </div>  
-                <div class="col-lg-6">
-                  <select class="form-select" id="validationDefault04" required>
-      <option selected disabled value="">Preferred Callback Time</option>
-      <option>Morning (9AM-12PM)</option>
-      <option>Afternoon (12PM-4PM)</option>
-      <option>Evening (4PM-8PM)</option>
-    </select>
-                </div>
+              <div class="col-lg-6">
+                <input type="text" class="form-control" placeholder="Your City" id="validationCity" required="">
+                <div class="invalid-feedback">Please enter your City.</div>
+              </div>
             </div>
-           </div>
-
-              <div class="col-12">
-                <div class="mb-3">
-                  <textarea class="form-control" rows="5" placeholder="Additional Details (Optional)" id="validationTextarea"></textarea>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-lg-6">
+                <select class="form-select" id="validateProject" required>
+                  <option selected disabled value="">Type Of Project</option>
+                  <option>Home Interior </option>
+                  <option>Office Interior </option>
+                  <option>Kitchen Renovation</option>
+                  <option>Bathroom Renovation</option>
+                  <option>Full Home Renovation</option>
+                </select>
+              </div>
+              <div class="col-lg-6">
+                <select class="form-select" id="validationTiming" required>
+                  <option selected disabled value="">Preferred Callback Time</option>
+                  <option>Morning (9AM-12PM)</option>
+                  <option>Afternoon (12PM-4PM)</option>
+                  <option>Evening (4PM-8PM)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <textarea class="form-control" rows="5" placeholder="Additional Details (Optional)" id="validateTextarea"></textarea>
+            </div>
+          </div>
+          <!-- Modal Launcher for Mobile -->
+          <div class="col-12">
+            <button type="button" class="btn btnoutline mt-4 d-table mx-auto d-md-none" data-bs-toggle="modal" data-bs-target="#whatsappButton"> Submit </button>
+          </div>
+          <!-- WhatsApp Modal -->
+          <div class="modal fade" id="whatsappButton" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text" id="exampleModalLabel"> Select WhatsApp Type </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-              </div>
-
-              <!-- Modal Launcher for Mobile -->
-              <div class="col-12">
-                <button type="button" class="btn btnoutline mt-4 d-table mx-auto d-md-none" data-bs-toggle="modal" data-bs-target="#whatsappButton">
-                Submit
-              </button>
-              </div>
-
-              <!-- WhatsApp Modal -->
-              <div class="modal fade" id="whatsappButton" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title text" id="exampleModalLabel">
-                        Select WhatsApp Type
-                      </h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body text-center">
-                      <div class="options">
-                        <button id="whatsappStandard" class="btn option">
-                          <img loading="lazy" src="image/whatsapp-icon.png" alt="WhatsApp">
-                        </button>
-                        <button id="whatsappBusiness" class="btn option">
-                          <img loading="lazy" src="image/whatsapp-business-icon.png" alt="WhatsApp Business">
-                        </button>
-                      </div>
-                    </div>
+                <div class="modal-body text-center">
+                  <div class="options">
+                    <button id="whatsappStandard" class="btn option">
+                      <img loading="lazy" src="image/whatsapp-icon.png" alt="WhatsApp">
+                    </button>
+                    <button id="whatsappBusiness" class="btn option">
+                      <img loading="lazy" src="image/whatsapp-business-icon.png" alt="WhatsApp Business">
+                    </button>
                   </div>
                 </div>
               </div>
-
-              <!-- Submit Button for Desktop -->
-              <div class="col-12 d-none d-md-table">
-                <button class="btnoutline mt-4 d-table mx-auto" id="desktopBtn" type="submit">
-                  Submit
-                </button>
-              </div>
-            </form>
+            </div>
+          </div>
+          <!-- Submit Button for Desktop -->
+          <div class="col-12 d-none d-md-table">
+            <button class="btnoutline mt-4 d-table mx-auto" id="desktopBtn" type="submit"> Submit </button>
+          </div>
+        </form>
       </div>
     </div>
 
@@ -953,40 +934,29 @@ function initMobileNavToggle() {
    </script>
 
 <script>
- const filterButtons = document.querySelectorAll('.filter-btn');
+  const filterButtons = document.querySelectorAll('.filter-btn');
   const galleryCards = document.querySelectorAll('.gallery-card');
 
-  filterButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const filter = btn.getAttribute('data-filter');
-      filterButtons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      galleryCards.forEach(card => {
-        card.classList.remove('show');
-        if (filter === 'all' || card.classList.contains(filter)) {
-          setTimeout(() => card.classList.add('show'), 10);
-        }
-      });
+  function updateSpotlightGallery() {
+    // Remove 'spotlight' class from all anchor tags
+    document.querySelectorAll('.gallery-card a').forEach(anchor => {
+      anchor.classList.remove('spotlight');
     });
-  });
-</script>
 
-<script>
+    // Add 'spotlight' class only to visible cards
+    document.querySelectorAll('.gallery-card.show a').forEach(anchor => {
+      anchor.classList.add('spotlight');
+    });
+
+    // Destroy previous Spotlight if necessary
+    if (typeof Spotlight !== 'undefined' && Spotlight.destroy) {
+      Spotlight.destroy();
+    }
+
+    // Re-initialize Spotlight
+
   Spotlight.show(myGallery, {
-    // "fade", "slide", "scale", and "rotate"
     animation: "slide",
-    /* shows/hides controls
-"theme",
-"fullscreen",
-"autofit",
-"zoom-in",
-"zoom-out",
-"page",
-"title",
-"description",
-"player"
-*/
     control: [
       "autofit",
       "zoom",
@@ -1019,6 +989,33 @@ function initMobileNavToggle() {
     preloader: true,
     // enables image prefetching
     prefetch: true,
+  });
+
+  }
+
+  // Filter functionality
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      galleryCards.forEach(card => {
+        card.classList.remove('show');
+        if (filter === 'all' || card.classList.contains(filter)) {
+          card.classList.add('show');
+        }
+      });
+
+      // Delay update to ensure class changes take effect
+      setTimeout(updateSpotlightGallery, 50);
+    });
+  });
+
+  // Run once on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    updateSpotlightGallery();
   });
 </script>
 
@@ -1060,16 +1057,28 @@ function initMobileNavToggle() {
         }
 
         // Construct WhatsApp Message
-        function constructWhatsAppMessage() {
-          const name = $("#validationCustom01").val();
-          const email = $("#validationEmail").val();
-          const phone = $("#PhoneNo").val();
-          const Subject = $("#validationSubject").val();
-          const message = $("#validationTextarea").val();
+       function constructWhatsAppMessage() {
+        const name = $("#Name").val();
+        const phone = $("#PhoneNo").val();
+        const email = $("#validateEmail").val();
+        const City = $("#validationCity").val();
+        const Project = $("#validateProject").val();
+        const Timing = $("#validationTiming").val();
+        const message = $("#validateTextarea").val();
 
-          // Construct the WhatsApp message
-          return `Hello, I have an enquiry:\n\nName: ${name}\nEmail: ${email || "Not provided"}\nPhone: ${phone}\nSubject: ${Subject || "Not provided"}\nMessage: ${message || "Not provided"}`;
-        }
+        // Construct the WhatsApp message
+        return (
+          `📩 *New Inquiry from LifeLens Interior Website*\n\n\n` +
+          `👤 *Name*: ${name}\n\n` +
+          `📞 *Phone*: ${phone}\n\n` +
+          `📧 *Email*: ${email || "Not provided"}\n\n` +
+          `🏙️ *City*: ${City || "Not provided"}\n\n` +
+          `🏗️ *Project Type*: ${Project || "Not provided"}\n\n` +
+          `⏰ *Preferred Callback Time*: ${Timing || "Not provided"}\n\n` +
+          `📝 *Additional Details*: ${message || "Not provided"}`
+        );
+      }
+
 
         // Form Validation Function
         function validateForm() {
