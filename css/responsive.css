@@ -129,7 +129,7 @@
 
   .wrapheder {
     background-color: var(--lightBg);
-    min-height: 95px;
+    min-height: 71px;
 }
 
 .UL_Style li {
@@ -153,6 +153,10 @@
     align-items: center !important;
     justify-content: center !important;
     text-align: center;
+  }
+
+  .Banner .owl-nav{
+    display: none;
   }
 
 }

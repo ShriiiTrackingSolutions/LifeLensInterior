@@ -119,8 +119,8 @@ function initMobileNavToggle() {
 
 // WhatsApp URL Adjuster (Device-based Detection)
 (function () {
-  const mobileLink = "https://api.whatsapp.com/send?phone=916354710794";
-  const desktopLink = "https://web.whatsapp.com/send?phone=916354710794";
+  const mobileLink = "https://api.whatsapp.com/send?phone=917990094133";
+  const desktopLink = "https://web.whatsapp.com/send?phone=917990094133";
 
   function isMobileDevice() {
     return /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
