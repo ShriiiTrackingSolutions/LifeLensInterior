@@ -159,6 +159,13 @@
     display: none;
   }
 
+  .ContactForm {
+  row-gap: 14px;
+}
+.ContactForm .row {
+  row-gap: 14px;
+}
+
 }
 
 @media only screen and (max-height: 539.98px) {

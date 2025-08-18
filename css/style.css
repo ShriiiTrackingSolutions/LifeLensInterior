@@ -426,6 +426,15 @@ img {
   min-height: 400px;
   position: relative;
 }
+#ca1.owl-carousel .item::before{
+ content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../image/overlayVastu.webp') center/ cover;
+}
 #ca1.owl-carousel .item > .container {
   position: absolute;
   width: 100%;
@@ -711,6 +720,10 @@ img {
   position: absolute;
   left: 0;
 }
+
+.designExperience {
+ background: url('../image/BG_Pattern.webp') center/cover no-repeat;
+}
 .designExperience .container>.row{
   row-gap: 24px;
 }
@@ -722,6 +735,9 @@ img {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+.ourRecentWork {
+  background-color: var(--lightBg);
 }
 .ourRecentWork .container>.row{
   row-gap: 24px;
@@ -908,6 +924,13 @@ img {
   border-radius: 50%;
 }
 
+.whatOurClientsSay .secH,.whatOurClientsSay .maxPara{
+  color: #ffffff;
+}
+.whatOurClientsSay{
+  background:  url('../image/sunCircleBack-8.webp') center/cover no-repeat,linear-gradient(#323232,#323232);
+}
+
 .whatOurClientsSay .owl-dots {
   display: flex;
   justify-content: center;
@@ -920,11 +943,11 @@ img {
   border-radius: 50%;
   border: none;
   display: inline-block;
-  background: var(--accentColour);
+  background: var(--textGrey);
   margin: 4px 0;
 }
 .whatOurClientsSay .owl-dots button.owl-dot.active span {
-  background-color: var(--primary-color);
+  background-color: var(--accentColour);
 }
 
 .review-text {
@@ -998,7 +1021,7 @@ img {
   position: relative;
   display: flex;
   gap: 20px;
-  color: var(--textGrey);
+  color: #ffffff;
   font-size: 14px;
   transition: color 0.3s ease-in-out;
 }
@@ -1007,7 +1030,7 @@ img {
   margin-bottom: 0;
 }
 .contactCard svg{
- color: var(--black);
+ color: #ffffff;
 }
 .absAnchor{
   position: absolute;
@@ -1018,7 +1041,7 @@ img {
   z-index: 1;
 }
 .contactCard:hover{
-  color: var(--primary-color);
+  color: var(--lightBg);
 }
 
 .ContactForm {
@@ -1027,9 +1050,14 @@ img {
 .ContactForm .row {
   row-gap: 24px;
 }
-
+.readyToUpgrade{
+  background: url(../image/sunCircleBack-8.webp) center / cover no-repeat, linear-gradient(#323232, #323232);
+}
 .readyToUpgrade .container>.row {
   row-gap: 40px;
+}
+.readyToUpgrade .secH,.readyToUpgrade .maxPara{
+  color: #ffffff;
 }
 
 .ContactForm input:not(.form-check-input),
