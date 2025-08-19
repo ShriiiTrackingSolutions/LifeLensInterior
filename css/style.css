@@ -426,15 +426,7 @@ img {
   min-height: 400px;
   position: relative;
 }
-#ca1.owl-carousel .item::before{
- content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('../image/overlayVastu.webp') center/ cover;
-}
+
 #ca1.owl-carousel .item > .container {
   position: absolute;
   width: 100%;

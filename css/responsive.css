@@ -166,6 +166,13 @@
   row-gap: 14px;
 }
 
+.display-3{
+      font-size: clamp(2rem, 1.6rem + 2vw, 60px);
+}
+
+.secH {
+  font-size: clamp(24px, 1rem + 1.8vw, 38px); 
+}
 }
 
 @media only screen and (max-height: 539.98px) {
