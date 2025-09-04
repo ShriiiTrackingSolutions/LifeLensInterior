@@ -455,16 +455,144 @@ img {
 }
 
 
-.btnoutline{
+.btnoutline {
   display: inline-block;
-  color: var(--black);
-  background-color: var(--accentColour);
+  position: relative;
   padding: 12px 24px;
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  background-color: var(--accentColour);
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--black);
+  border: 3px solid var(--accentColour);
+  border-radius: 8px;
+  box-shadow: 0 0 0 #fec1958c;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-.btnoutline:hover{
-  color: #000000;
+.btnoutline div[class^="star-"] {
+  pointer-events: none;
+  will-change: position;
+}
+
+.star-1 {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 25px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+}
+
+.star-2 {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 17px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-3 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 24px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-4 {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 25px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-5 {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-6 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 22px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 0.4s ease;
+}
+
+.btnoutline:hover {
+  background: transparent;
+  color: #ffffff;
+  box-shadow: 0 0 25px #fec1958c;
+}
+
+.btnoutline:hover .star-1 {
+  position: absolute;
+  top: -40%;
+  left: -20%;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+.btnoutline:hover .star-2 {
+  position: absolute;
+  top: -25%;
+  left: 10%;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+.btnoutline:hover .star-3 {
+  position: absolute;
+  top: 120%;
+  left: 25%;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+.btnoutline:hover .star-4 {
+  position: absolute;
+  top: -55%;
+  left: 80%;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+.btnoutline:hover .star-5 {
+  position: absolute;
+  top: 25%;
+  left: 115%;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+.btnoutline:hover .star-6 {
+  position: absolute;
+  top: 110%;
+  left: 60%;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
 }
 
 
@@ -729,7 +857,7 @@ img {
   text-align: center;
 }
 .ourRecentWork {
-  background-color: var(--lightBg);
+  background:  url('../image/RecentBack.svg') center/cover no-repeat,linear-gradient(var(--lightBg),var(--lightBg));
 }
 .ourRecentWork .container>.row{
   row-gap: 24px;
@@ -762,6 +890,10 @@ img {
   color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.servicesWeOffer{
+  background:  url('../image/ServiceBack.svg') center/cover no-repeat;
+}
+
 .servicesWeOffer .container>.row{
   row-gap: 24px;
 }
@@ -770,7 +902,7 @@ img {
 
  /* Our Work section start */
 .ourWork{
-  background-color: var(--lightBg);
+  background: url('../image/ourWorkBack.svg') center/cover no-repeat,linear-gradient(var(--lightBg),var(--lightBg));
 }
 
 .gallery-filter {
@@ -858,6 +990,8 @@ img {
       opacity: 1;
       transform: translateY(0);
     }
+
+  
 
     .ourWork .spotlight{
       position: relative;
@@ -951,6 +1085,9 @@ img {
 /* What Our Clients Say section end */
 
 
+.theLifeLensAdvantage{
+  background: url('../image/lifelensadvantageBack.svg') center/cover no-repeat;
+}
 
     .advantage-card {
       background: #fff;
@@ -1124,16 +1261,10 @@ img {
     height: 46px;
 }
 
-.ContactForm .btnoutline{
-  border: none;
-}
-
-.ContactForm .btnoutline.btn{
-border-radius: 0;
-}
-
 .ContactForm .btnoutline.btn:hover{
-background-color: var(--accentColour);
+  color: #ffffff;
+  border: 3px solid var(--accentColour);
+  border-radius: 8px;
 }
 
 
